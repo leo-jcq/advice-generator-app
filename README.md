@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [https://github.com/leo-jcq/advice-generator-app](https://github.com/leo-jcq/advice-generator-app)
+-   Solution URL: [https://www.frontendmentor.io/solutions/adive-generator-using-react-HnzOgRzANT](https://www.frontendmentor.io/solutions/adive-generator-using-react-HnzOgRzANT)
 -   Live Site URL: [https://leo-jcq.github.io/advice-generator-app/](https://leo-jcq.github.io/advice-generator-app/)
 
 ## My process
