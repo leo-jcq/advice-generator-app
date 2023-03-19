@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
+
+:root {
+    /* Primary */
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    /* Neutral */
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    min-height: 45vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--dark-blue);
+}
+
+main {
+    width: 540px;
+    max-width: 90%;
+    padding: 3.25em 3em 4.9em 3em;
+
+    position: relative;
+
+    border-radius: 20px;
+
+    display: flex;
+    gap: 45px;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--dark-grayish-blue);
+}
+
+#advice-number {
+    font-size: .8em;
+    font-weight: 400;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    color: var(--neon-green);
+}
+
+#advice-text {
+    font-size: 1.75em;
+    font-weight: 800;
+    text-align: center;
+    color: var(--light-cyan);
+}
+
+#divider {
+    width: 100%;
+}
+
+#dice {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    background-color: var(--neon-green);
+
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition: box-shadow .2s linear;
+}
+
+#dice:hover {
+    box-shadow: 0 0 40px var(--neon-green);
+}
+
+#dice:hover img {
+    transform: rotate(180deg);
+
+    transition: transform .3s linear;
+}
+
+/* Responsive */
+@media screen and (max-width: 800px) {
+    :root {
+        font-size: 12px;
+    }
+}
