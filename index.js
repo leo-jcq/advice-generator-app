@@ -1,20 +1,18 @@
 const App = () => {
     const [advice, setAdvice] = React.useState([]);
 
-    React.useLayoutEffect(() => {
+    React.useEffect(() => {
         getAdvice();
     }, []);
 
-    const getAdvice = () => {
-        (async () => {
-            const response = await fetch('https://api.adviceslip.com/advice');
-            const responseData = await response.json();
-            if (response.ok) {
-                setAdvice(responseData.slip);
-            } else {
-                alert(JSON.stringify(responseData));
-            }
-        })();
+    const getAdvice = async () => {
+        const response = await fetch('https://api.adviceslip.com/advice');
+        const responseData = await response.json();
+        if (response.ok) {
+            setAdvice(responseData.slip);
+        } else {
+            alert(JSON.stringify(responseData));
+        }
     };
 
     return (
